@@ -60,8 +60,14 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 .hero-photo {
   position: absolute; right: 0; top: -120px;
   height: calc(100% + 230px); width: auto;
-  -webkit-mask-image: radial-gradient(ellipse 45% 50% at 55% 50%, #000 50%, transparent 100%);
-  mask-image: radial-gradient(ellipse 45% 50% at 55% 50%, #000 50%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 22%, #000 80%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 22%, #000 80%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%);
+  mask-composite: intersect;
 }
 
 /* Buttons */
@@ -154,8 +160,12 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
   .hero-photo {
     position: static; display: block; align-self: center; order: -1;
     width: min(100%, 380px); height: auto;
-    -webkit-mask-image: radial-gradient(ellipse 45% 50% at 55% 50%, #000 50%, transparent 100%);
-    mask-image: radial-gradient(ellipse 45% 50% at 55% 50%, #000 50%, transparent 100%);
+    -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 22%, #000 80%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%);
+    mask-image:
+    linear-gradient(to right, transparent 0%, #000 22%, #000 80%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 82%, transparent 100%);
   }
   .section, .contact { padding: 64px 0; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
