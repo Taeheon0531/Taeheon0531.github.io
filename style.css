@@ -109,26 +109,6 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 .card-body p { margin: 8px 0 14px; color: var(--muted); font-size: 0.95rem; }
 .card-link { display: inline-block; margin-top: 16px; font-weight: 700; color: var(--blue); font-size: 0.9rem; }
 
-/* Study list */
-.post-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-.post-list a {
-  display: flex; gap: 24px; padding: 18px 4px;
-  border-bottom: 1px solid var(--line);
-  transition: color 0.15s, padding-left 0.15s;
-}
-.post-list a:hover { color: var(--blue); padding-left: 12px; }
-.post-list time { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 72px; }
-.post-list span { font-weight: 500; }
-
-/* Travel gallery */
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
-.gallery figure { margin: 0; }
-.photo {
-  aspect-ratio: 4 / 3; border-radius: var(--radius);
-  background: linear-gradient(160deg, #8fb0ff 0%, var(--blue) 100%);
-}
-.gallery figcaption { margin-top: 8px; font-weight: 500; font-size: 0.95rem; }
-
 /* Timeline */
 .timeline { list-style: none; padding: 0 0 0 28px; margin: 0; border-left: 3px solid var(--blue-soft); }
 .timeline li { position: relative; padding-bottom: 32px; }
@@ -159,8 +139,6 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
   .avatar { width: 120px; height: 120px; font-size: 3rem; border-width: 5px; }
   .section, .contact { padding: 64px 0; }
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
-  .post-list a { flex-direction: column; gap: 2px; }
-  .gallery { grid-template-columns: 1fr 1fr; gap: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
