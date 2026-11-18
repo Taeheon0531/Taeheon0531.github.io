@@ -163,3 +163,30 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 .timeline + .sub-title { margin-top: 24px; }
 .section-lead { margin: -24px 0 28px; color: var(--muted); }
 .honor { color: var(--blue-dark) !important; font-weight: 500; }
+
+/* Hobbies: wide alternating rows, distinct from the Skills card grid */
+.hobby-list { display: grid; gap: 28px; }
+.hobby {
+  display: grid; grid-template-columns: 260px 1fr; align-items: stretch;
+  background: var(--white); border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 10px 30px rgba(18, 48, 138, 0.08);
+}
+.hobby:nth-child(even) { grid-template-columns: 1fr 260px; }
+.hobby:nth-child(even) .hobby-visual { order: 2; }
+.hobby-visual { display: grid; place-items: center; min-height: 220px; }
+.hobby-visual svg { width: 96px; height: 96px; }
+.hobby-visual-yellow { background: var(--yellow); color: var(--blue-dark); }
+.hobby-visual-blue { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: var(--yellow); }
+.hobby-text { padding: 32px 36px; align-self: center; }
+.hobby-kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); }
+.hobby-text h3 { font-size: 1.6rem; font-weight: 900; margin: 4px 0 10px; }
+.hobby-text p { margin: 0 0 20px; color: var(--muted); }
+.hobby-text p:last-child { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .hobby, .hobby:nth-child(even) { grid-template-columns: 1fr; }
+  .hobby:nth-child(even) .hobby-visual { order: 0; }
+  .hobby-visual { min-height: 140px; }
+  .hobby-visual svg { width: 64px; height: 64px; }
+  .hobby-text { padding: 24px; }
+}
