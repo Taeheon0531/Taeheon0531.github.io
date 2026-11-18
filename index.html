@@ -1,99 +1,154 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-    <title>Taeheon's Archive</title>
-    <meta charset="utf-8">
-    <style>
-        body{
-            margin: 0;
-            background-color: lightgray;
-        }
-
-        a{
-            color:black;
-            text-decoration: none;
-        }
-
-        h1, h2, h3{
-            font-family: 'Jua', sans-serif;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-
-        #top-layer{
-            display: grid;
-            grid-template: 1fr
-        }
-        #left-layer{
-            display: grid;
-            grid-template-columns: 240px 1fr
-        }
-
-        #top-layer h1 {
-            font-size: 50px;
-            text-align: center;
-            border-bottom:2px solid rgb(51, 42, 65);
-            margin: 0;
-            padding: 30px;
-        }
-
-        #left-layer h1 {
-            font-size: 23px;
-            margin: 0;
-            padding: 10px;
-        }
-
-        #left-layer ol{
-            border-right:2px solid rgb(51, 42, 65);
-            width: 160px;
-            margin: 0;
-            padding-top: 10px;
-            padding-left: 40px;
-            list-style: square;
-        }
-
-        #right-layer h1 {
-            font-size: 25px;
-            margin: 0;
-            padding-top: 18px;
-        }
-
-        #right-layer h2{
-            font-size: 20px;
-        }
-
-        #right-layer h3{
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taeheon</title>
+  <meta name="description" content="Taeheon의 개인 홈페이지">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="top-layer">
-        <h1><a href="index.html" style="color:goldenrod">Taeheon's Archive</a></h1>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Taeheon<span>.</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#study">Study</a>
+        <a href="#travel">Travel</a>
+        <a href="#resume">Resume</a>
+      </nav>
     </div>
+  </header>
 
-    <div id="left-layer">
-        <ol>
-            <li><h1><a href="Taeheon's_RESUME.html">Resume</a></h1></li>
-            <li><h1><a href="Taeheon's_TRAVEL.html">Travel</a></h1></li>
-            <li><h1><a href="Taeheon's_PROJECT.html">Project</a></h1></li>
-            <li><h1><a href="Taeheon's_INFORMATICS_STUDY.html">Informatics Study</a></h1></li>
-        </ol>
-        <div id="right-layer">
-            <h1>Welcome to Taeheon's homepage!</h1>
-            <h2>E-mail: hunnykevin91@naver.com</h2>
-            <h2>Instagram: xogjs__2</h2>
-            <br>
-            <h2>-- Linked sites --</h2>
-            <h3><a href="https://www.naver.com/" target="_blank" style="color:green">NAVER</a></h3>
-            <h3><a href="https://www.google.com/" target="_blank" style="color:rgb(19, 18, 18)">GOOGLE</a></h3>
-            <h3><a href="https://www.youtube.com/" target="_blank" style="color:red">YOUTUBE</a></h3>
-            <h3><a href="https://www.instagram.com/" target="_blank" style="color:rgb(224, 0, 112)">INSTAGRAM</a></h3>
-            <h3><a href="https://www.facebook.com/" target="_blank" style="color:blue">FACEBOOK</a></h3>
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Taeheon<span>.</span></h1>
+          <p class="lead">한 줄 소개를 여기에 적어 주세요.<br>예: 문제를 끝까지 파고드는 정보과학도</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+            <a href="#contact" class="btn btn-ghost">연락하기</a>
+          </div>
         </div>
-    </div>    
-</body>
+        <div class="avatar" aria-label="프로필 사진 자리">T</div>
+      </div>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <p>자기소개를 3~4문장 정도로 적어 주세요. 어떤 사람인지, 무엇에 관심이 있는지, 요즘 무엇을 하고 있는지 쓰면 좋아요.</p>
+          <ul class="tags">
+            <li>C++</li>
+            <li>Algorithms</li>
+            <li>관심 분야</li>
+            <li>관심 분야</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-thumb"></div>
+            <div class="card-body">
+              <h3>프로젝트 이름</h3>
+              <p>어떤 문제를 풀었는지 한두 줄로 설명해 주세요.</p>
+              <ul class="tags tags-sm"><li>C++</li><li>Tool</li></ul>
+              <a href="#" class="card-link">자세히 보기 →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-thumb"></div>
+            <div class="card-body">
+              <h3>프로젝트 이름</h3>
+              <p>어떤 문제를 풀었는지 한두 줄로 설명해 주세요.</p>
+              <ul class="tags tags-sm"><li>Python</li></ul>
+              <a href="#" class="card-link">자세히 보기 →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-thumb"></div>
+            <div class="card-body">
+              <h3>프로젝트 이름</h3>
+              <p>어떤 문제를 풀었는지 한두 줄로 설명해 주세요.</p>
+              <ul class="tags tags-sm"><li>Web</li></ul>
+              <a href="#" class="card-link">자세히 보기 →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study -->
+    <section id="study" class="section">
+      <div class="container">
+        <h2 class="section-title">Study Notes</h2>
+        <ul class="post-list">
+          <li><a href="#"><time>2026.11</time><span>공부 기록 제목</span></a></li>
+          <li><a href="#"><time>2026.10</time><span>공부 기록 제목</span></a></li>
+          <li><a href="#"><time>2026.09</time><span>공부 기록 제목</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Travel -->
+    <section id="travel" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Travel</h2>
+        <div class="gallery">
+          <figure><div class="photo"></div><figcaption>여행지</figcaption></figure>
+          <figure><div class="photo"></div><figcaption>여행지</figcaption></figure>
+          <figure><div class="photo"></div><figcaption>여행지</figcaption></figure>
+          <figure><div class="photo"></div><figcaption>여행지</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <ol class="timeline">
+          <li><time>20XX – 현재</time><h3>학교 / 소속</h3><p>전공 또는 역할</p></li>
+          <li><time>20XX</time><h3>수상 / 활동</h3><p>간단한 설명</p></li>
+          <li><time>20XX</time><h3>수상 / 활동</h3><p>간단한 설명</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>함께 이야기해요</h2>
+        <p>궁금한 점이 있으면 편하게 연락 주세요.</p>
+        <div class="hero-actions">
+          <a href="mailto:you@example.com" class="btn btn-yellow">Email</a>
+          <a href="https://github.com/Taeheon0531" class="btn btn-outline-light">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Taeheon</div>
+  </footer>
+
+</body>
 </html>
