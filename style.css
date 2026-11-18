@@ -157,7 +157,9 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
   * { transition: none !important; }
 }
 
-/* Photography */
-.hobby { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-.hobby p { margin: 0; max-width: 560px; color: var(--muted); font-size: 1.05rem; }
 .timeline .tags { margin-top: 10px; }
+
+.sub-title { font-size: 1.2rem; color: var(--blue); margin: 0 0 20px; }
+.timeline + .sub-title { margin-top: 24px; }
+.section-lead { margin: -24px 0 28px; color: var(--muted); }
+.honor { color: var(--blue-dark) !important; font-weight: 500; }

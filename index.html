@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -18,11 +18,11 @@
       <nav>
         <a href="#about">About</a>
         <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
         <a href="#skills">Skills</a>
-        <a href="#activities">Activities</a>
+        <a href="#leadership">Leadership</a>
         <a href="#projects">Projects</a>
-        <a href="#photography">Photography</a>
+        <a href="#hobbies">Hobbies</a>
       </nav>
     </div>
   </header>
@@ -37,7 +37,7 @@
           <h1>Taeheon Lee<span>.</span></h1>
           <p class="lead">Molecular Biology student at Ghent University Global Campus,<br>exploring immunology, healthcare systems, machine learning and AI-assisted vibe coding.</p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#research" class="btn btn-primary">View Research</a>
             <a href="#contact" class="btn btn-ghost">Get in Touch</a>
           </div>
         </div>
@@ -74,16 +74,34 @@
       <div class="container">
         <h2 class="section-title">Education</h2>
         <ol class="timeline">
-          <li><time>Current</time><h3>Ghent University Global Campus</h3><p>Molecular Biology · Senior (4th year)</p></li>
+          <li>
+            <time>Current</time>
+            <h3>Ghent University Global Campus</h3>
+            <p>Molecular Biology · Senior (4th year)</p>
+            <p class="honor">UGent Semester Scholarship · AY 2026–2027, Semester 1 (tuition waiver)</p>
+          </li>
           <li><time>Graduated</time><h3>Naksaeng High School</h3><p>South Korea</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- Publications -->
-    <section id="publications" class="section">
+    <!-- Research -->
+    <section id="research" class="section">
       <div class="container">
-        <h2 class="section-title">Publications</h2>
+        <h2 class="section-title">Research</h2>
+
+        <h3 class="sub-title">Experience</h3>
+        <ol class="timeline">
+          <li>
+            <time>Research Assistant</time>
+            <h3>E-cigarette Misinformation Study</h3>
+            <p>Supervised by Prof. Jiang Bian · Collaborative project with the University of Pennsylvania</p>
+            <p>Studied how misinformation about e-cigarettes spreads on social media. Collected tweets through the Twitter API, built a keyword-extraction pipeline in Python, and applied topic modeling to uncover the main misinformation themes. Contributed to the project's data collection and early analysis before leaving for mandatory military service in South Korea.</p>
+            <ul class="tags tags-sm"><li>Twitter API</li><li>Topic Modeling</li><li>Python</li></ul>
+          </li>
+        </ol>
+
+        <h3 class="sub-title">Publications</h3>
         <ol class="pub-list">
           <li>
             <h3>The ESCAPE Framework: A Practical Two-Phase Mixed-Methods Approach for Usability Evaluation of Interoperable Health IT</h3>
@@ -130,27 +148,33 @@
             <div class="card-body">
               <h3>Programming &amp; AI</h3>
               <p>Python is my strongest language; I build machine learning models and ship ideas fast with AI.</p>
-              <ul class="tags tags-sm"><li>Python</li><li>Machine Learning</li><li>Topic Modeling</li><li>NLP</li><li>Vibe Coding</li></ul>
+              <ul class="tags tags-sm"><li>Python</li><li>Machine Learning</li><li>Topic Modeling</li><li>Vibe Coding</li></ul>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Activities -->
-    <section id="activities" class="section">
+    <!-- Leadership -->
+    <section id="leadership" class="section">
       <div class="container">
-        <h2 class="section-title">Activities</h2>
+        <h2 class="section-title">Leadership &amp; Activities</h2>
         <ol class="timeline">
           <li>
-            <time>Research</time>
-            <h3>Undergraduate Research Assistant · E-cigarette Misinformation Study</h3>
-            <p>Supervised by Prof. Jiang Bian · Collaborative project with the University of Pennsylvania</p>
-            <p>Studied how misinformation about e-cigarettes spreads on social media. Collected tweets through the Twitter API, built a keyword-extraction pipeline in Python, and applied topic modeling to uncover the main misinformation themes. Contributed to the project's data collection and early analysis before leaving for mandatory military service in South Korea.</p>
-            <ul class="tags tags-sm"><li>Twitter API</li><li>Topic Modeling</li><li>NLP</li><li>Python</li></ul>
+            <time>LAMBDA · Project Club</time>
+            <h3>Project Lead, Graduate School Preparation Project</h3>
+            <p>Led the club's project on preparing for graduate school.</p>
           </li>
-          <li><time>Club</time><h3>Club or society</h3><p>Your role and contribution.</p></li>
-          <li><time>Scholarship</time><h3>UGent Semester Scholarship</h3><p>Ghent University Global Campus · AY 2026–2027, Semester 1 (tuition waiver)</p></li>
+          <li>
+            <time>LAMBDA · Project Club</time>
+            <h3>LAMBDA Ideathon · Participant &amp; Organizing Support</h3>
+            <p>Competed in the ideathon hosted by LAMBDA and helped run the event.</p>
+          </li>
+          <li>
+            <time>GENT · Video Production Club</time>
+            <h3>President &amp; Producer (PD)</h3>
+            <p>Led the club as its head and produced its video content as PD.</p>
+          </li>
         </ol>
       </div>
     </section>
@@ -159,6 +183,7 @@
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
+        <p class="section-lead">Things I've built through vibe coding.</p>
         <div class="cards">
           <article class="card">
             <div class="card-thumb"></div>
@@ -172,33 +197,33 @@
           <article class="card">
             <div class="card-thumb"></div>
             <div class="card-body">
-              <h3>Project name</h3>
-              <p>Describe the problem you solved in a sentence or two.</p>
-              <ul class="tags tags-sm"><li>Tag</li></ul>
-              <a href="#" class="card-link">Learn more →</a>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-thumb"></div>
-            <div class="card-body">
-              <h3>Project name</h3>
-              <p>Describe the problem you solved in a sentence or two.</p>
-              <ul class="tags tags-sm"><li>Tag</li></ul>
-              <a href="#" class="card-link">Learn more →</a>
+              <h3>Coming soon</h3>
+              <p>My next vibe-coding project will appear here.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Photography -->
-    <section id="photography" class="section">
-      <div class="container hobby">
-        <div>
-          <h2 class="section-title">Photography</h2>
-          <p>Away from research and code, I spend my time behind the camera. Photography is how I slow down and notice the details around me.</p>
+    <!-- Hobbies -->
+    <section id="hobbies" class="section">
+      <div class="container">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-body">
+              <h3>Photography</h3>
+              <p>Away from research and code, I spend my time behind the camera. Photography is how I slow down and notice the details around me.</p>
+              <a href="https://www.instagram.com/teica_photo/" class="card-link" target="_blank" rel="noopener">See my photos @teica_photo →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Beer Brewing</h3>
+              <p>I completed brewer training at Haystack Brewery and can brew my own beer.</p>
+            </div>
+          </article>
         </div>
-        <a href="https://www.instagram.com/teica_photo/" class="btn btn-primary" target="_blank" rel="noopener">See my photos @teica_photo →</a>
       </div>
     </section>
 
