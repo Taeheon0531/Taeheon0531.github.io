@@ -122,8 +122,8 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 
 /* Timeline */
 .timeline { list-style: none; padding: 0 0 0 28px; margin: 0; border-left: 3px solid var(--blue-soft); }
-.timeline li { position: relative; padding-bottom: 32px; }
-.timeline li::before {
+.timeline > li { position: relative; padding-bottom: 32px; }
+.timeline > li::before {
   content: ""; position: absolute; left: -37px; top: 6px;
   width: 15px; height: 15px; border-radius: 50%;
   background: var(--yellow); border: 3px solid var(--blue);
@@ -160,3 +160,4 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 /* Photography */
 .hobby { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
 .hobby p { margin: 0; max-width: 560px; color: var(--muted); font-size: 1.05rem; }
+.timeline .tags { margin-top: 10px; }
